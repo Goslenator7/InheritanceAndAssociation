@@ -7,6 +7,7 @@ public abstract class Student {
     private int age;
     private int matricNumber;
 
+    // Constructor
     public Student(String name, String address, int age, int matricNumber) {
         setName(name);
         setAddress(address);
@@ -14,6 +15,7 @@ public abstract class Student {
         setMatricNumber(matricNumber);
     }
 
+    // Get details and create string for output
     public String getDetails() {
        String output;
 
@@ -21,6 +23,7 @@ public abstract class Student {
        return output;
     }
 
+    // getters and setters
 
     public String getName() {
         return name;
