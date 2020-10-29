@@ -12,7 +12,7 @@ public class Postgraduate extends Student {
     public String getDetails() {
         String output;
 
-        output = super.getDetails()+"Former School: "+getFormerDegree();
+        output = super.getDetails()+"\nFormer Degree: "+getFormerDegree()+"\n";
         return output;
     }
 

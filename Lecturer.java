@@ -4,12 +4,17 @@ import java.util.ArrayList;
 public class Lecturer {
 
     private String name;
+
+    public Lecturer(String name) {
+        setName(name);
+    }
+
     // Create list of abstract students which contain both under and post grads
     private ArrayList<Student> students = new ArrayList<>();
 
     // method to add student to list of student
-    public void addStudent(Student student) {
-        this.students.add(student);
+    public void addStudent(Student aStudent) {
+        this.students.add(aStudent);
     }
 
     // Loop through the list of students for that lecturer and get their details
@@ -32,5 +37,9 @@ public class Lecturer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public ArrayList<Student> getStudents() {
+        return students;
     }
 }
